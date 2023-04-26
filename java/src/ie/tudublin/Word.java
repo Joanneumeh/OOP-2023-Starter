@@ -6,7 +6,7 @@ public class Word {
     private String word;
     private ArrayList<Follow> follows;
 
-    public Word(String word) {
+    public Word(String word, ArrayList<Follow> arrayList) {
         this.word = word;
         this.follows = new ArrayList<>();
     }
