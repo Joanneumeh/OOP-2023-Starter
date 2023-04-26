@@ -50,7 +50,19 @@ public class DANI extends PApplet {
         noStroke();
         textSize(20);
         textAlign(CENTER, CENTER);
+		
     }
+	public boolean[] keys = new boolean[1024]; 
+
+	public void keyPressed()
+	{
+		keys[keyCode] = true;
+	}
+
+	public void keyReleased()
+	{
+		keys[keyCode] = false;
+	}
 
     public void loadFile(String filename) {
         // load the file into a String array
